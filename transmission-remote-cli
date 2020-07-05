@@ -344,8 +344,8 @@ class Transmission(object):
             quit(version_error + min_msg)
 
         # rpc version too new?
-        if response['arguments']['rpc-version'] > RPC_VERSION_MAX:
-            quit(version_error + "Please install Transmission version " + TRNSM_VERSION_MAX + " or lower.\n")
+        #if response['arguments']['rpc-version'] > RPC_VERSION_MAX:
+        #    quit(version_error + "Please install Transmission version " + TRNSM_VERSION_MAX + " or lower.\n")
 
         # setup compatibility to Transmission <2.40
         if self.rpc_version < 14:
